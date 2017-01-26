@@ -1,0 +1,11 @@
+function printThirdDigit(input) {
+    let thirdDigit = input[0].split('').reverse().join('').charAt(2);
+
+    if (thirdDigit == 7) {
+        return 'true';
+    } else if (thirdDigit.length == 1) {
+        return 'false' + ' ' + thirdDigit;
+    } else if (thirdDigit.length == 0) {
+        return 'false' + ' ' + '0';
+    }
+}
