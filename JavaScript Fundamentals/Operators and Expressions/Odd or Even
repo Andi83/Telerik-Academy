@@ -1,0 +1,7 @@
+function oddOrEven(input) {
+    if (input % 2 == 0) {
+        return 'even' + ' ' + input;
+    }
+    else
+        return 'odd' + ' ' + input;
+}
