@@ -1,0 +1,8 @@
+function divide(input) {
+    let divisible = input;
+    if (divisible % 35 == 0) {
+        return 'true' + ' ' + divisible;
+    }
+    else
+        return 'false' + ' ' + divisible;
+}
