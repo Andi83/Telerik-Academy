@@ -1,0 +1,7 @@
+function calcArea(input) {
+    let arr = input.toString().split(',');
+    let a = parseFloat(arr[0]);
+    let b = parseFloat(arr[1]);
+    let h = parseFloat(arr[2]);
+    return (((a + b) * h) / 2).toFixed(7);
+}
