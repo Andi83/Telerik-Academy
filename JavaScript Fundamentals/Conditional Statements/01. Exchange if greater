@@ -1,0 +1,10 @@
+function exchangeValues(input) {
+    let num1 = parseFloat(input[0]);
+    let num2 = parseFloat(input[1]);
+
+    if (num1 > num2) {
+        return num2 + ' ' + num1;
+    } else {
+        return num1 + ' ' + num2;
+    }
+}
