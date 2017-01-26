@@ -1,0 +1,11 @@
+function pointInsideCircle(input) {
+    let xCoord = input[0];
+    let yCoord = input[1];
+    let radius = 2;
+    let distance = Math.sqrt(Math.pow(xCoord, 2) + Math.pow(yCoord, 2));
+    if (distance <= radius) {
+        return 'yes' + ' ' + distance.toFixed(2);
+    } else {
+        return 'no' + ' ' + distance.toFixed(2);
+    }
+}
