@@ -1,0 +1,26 @@
+function pointCheck(input) {
+    let circleXCoord = 1;
+    let circleYCoord = 1;
+    let radius = 1.5
+
+    let pointXCoord = input[0];
+    let pointYCoord = input[1];
+
+    let result = '';
+
+    let distance = Math.sqrt(Math.pow(pointXCoord - circleXCoord, 2) + Math.pow(pointYCoord - circleYCoord, 2));
+    if (distance <= radius) {
+        result += 'inside circle';
+    } else {
+        result += 'outside circle';
+    }
+
+    if ((pointXCoord >= -1 && pointXCoord <= 5) && (pointYCoord <= 1 && pointYCoord >= -1)) {
+
+        result += ' inside rectangle';
+    } else {
+        result += ' outside rectangle';
+    }
+
+    return result;
+}
